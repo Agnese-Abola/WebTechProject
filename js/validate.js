@@ -6,12 +6,12 @@
 function validateForm() {
     let errors = {};
 
-    errors['fname'] = validateName($('#fname').val()) ?? true;
-    errors['lname'] = validateName($('#lname').val()) ?? true;
-    errors['email'] = validateEmail($('#email').val()) ?? true;
-    errors['date'] = validateDate($('#date').val()) ?? true;
-    errors['phone'] = validatePhone($('#phone').val()) ?? true;
-    errors["service"] = validateService($('#service').val()) ?? true;
+    errors['fname'] = validateName($('#fname').val());
+    errors['lname'] = validateName($('#lname').val());
+    errors['email'] = validateEmail($('#email').val());
+    errors['date'] = validateDate($('#date').val());
+    errors['phone'] = validatePhone($('#phone').val());
+    errors["service"] = validateService($('#service').val());
 
     // Build result without `true` options
     let result = {}
