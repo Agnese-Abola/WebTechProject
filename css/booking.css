@@ -9,12 +9,12 @@ body {
     border-radius: 10px;
 }
 
-.btn-primary {
-    width: 100%;
-}
-
 #nav-box {
     background-color: black;
+}
+
+.btn-primary {
+    width: 100%;
 }
 
 #book-image {
@@ -27,8 +27,17 @@ body {
     border-radius: 10px 0 0 10px;
 }
 
-#form {
+#booking-form {
     margin: 20px;
+    padding-bottom: 20px;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.errors {
+    color: red;
 }
 
 /**  Responsive breakpoints **/

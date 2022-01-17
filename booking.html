@@ -22,7 +22,7 @@
 <div class="container">
     <div id="nav-box">
         <div id="logo-box">
-            The Barber Shop
+            <a href="index.html">The Barber Shop</a>
         </div>
         <nav>
             <ul>
@@ -37,17 +37,17 @@
         <div id="book-image" class="col-md-4"></div>
         <div class="col-md-8">
 
-            <form id="form" action="html/appointment.html" method="POST">
+            <form data-toggle="validator" id="booking-form" action="confirmation.html" method="GET">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="fname" class="control-label">First Name</label>
+                            <label for="fname" class="control-label">First Name <small id="fname-errors" class="errors"></small></label>
                             <input type="text" class="form-control" name="fname" id="fname">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="lname" class="control-label">Last Name</label>
+                            <label for="lname" class="control-label">Last Name <small id="lname-errors" class="errors"></small></label>
                             <input type="text" class="form-control" name="lname" id="lname">
                         </div>
                     </div>
@@ -55,13 +55,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="email" class="control-label">Email</label>
+                            <label for="email" class="control-label">Email <small id="email-errors" class="errors"></small></label>
                             <input type="text" class="form-control" name="email" id="email">
                         </div>
                     </div>
                     <div class='col-md-6'>
                         <div class="form-group">
-                            <label for="date" class="control-label">Appointment Time</label>
+                            <label for="date" class="control-label">Appointment Time <small id="date-errors" class="errors"></small></label>
                             <div class='input-group date' id='datetimepicker1'>
                                 <input type='text' class="form-control" id="date">
                                 <span class="input-group-addon">
@@ -75,13 +75,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="phone" class="control-label">Phone</label>
+                            <label for="phone" class="control-label">Phone <small id="phone-errors" class="errors"></small></label>
                             <input type="tel" class="form-control" name="phone" id="phone">
                         </div>
                     </div>
                     <div class='col-md-6'>
                         <div class="form-group">
-                            <label for="service" class="control-label">Choose service</label>
+                            <label for="service" class="control-label">Choose service <small id="service-errors" class="errors"></small></label>
                             <select class="form-control" name="service" id="service">
                                 <option></option>
                                 <option value="hair">Hair cut €20.00</option>
@@ -95,9 +95,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label for="comments" class="control-label">Comments</label>
-                            <textarea id="comments" class="form-control" rows="5">
-                                </textarea>
+                            <label for="comments" class="control-label">Comments <small id="comments-errors" class="errors"></small></label>
+                            <textarea id="comments" class="form-control" name="comments" rows="5"></textarea>
                         </div>
                     </div>
                 </div>
@@ -115,5 +114,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
+<script src="js/validate.js"></script>
 <script src="js/booking.js"></script>
 </html>
