@@ -20,10 +20,16 @@ $(function () {
         } else {
             $.each(errors, function (key, val) {
                 $("#" + key).addClass("invalid");
-                $("#" + key + "-errors").text(val);
+                document.getElementById(key+'-errors').innerHTML = val;
             });
 
             return false;
         }
+    });
+
+    // Show comments
+    $('#comments-link').on('click', function(){
+        $(this).hide();
+        $('#comments-box').show();
     });
 });

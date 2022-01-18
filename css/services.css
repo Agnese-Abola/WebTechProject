@@ -1,0 +1,11 @@
+#book-image {
+    background: black url("../images/services_background.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ol {
+    font-weight: bold;
+}

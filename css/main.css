@@ -1,5 +1,6 @@
 body {
     font-family: 'Cairo', sans-serif;
+    min-width: 600px;
 }
 
 #nav-box {
@@ -8,6 +9,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 600px;
     padding-bottom: 20px;
     z-index: 999;
 }

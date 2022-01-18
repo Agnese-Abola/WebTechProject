@@ -14,8 +14,8 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/booking.css">
-
 </head>
 <body>
 
@@ -27,8 +27,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="services.html">services</a></li>
             </ul>
         </nav>
     </div>
@@ -37,17 +37,20 @@
         <div id="book-image" class="col-md-4"></div>
         <div class="col-md-8">
 
-            <form data-toggle="validator" id="booking-form" action="confirmation.html" method="GET">
+            <form data-toggle="validator" id="booking-form" action="https://www.w3schools.com/action_page.php"
+                  method="POST">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="fname" class="control-label">First Name <small id="fname-errors" class="errors"></small></label>
+                            <label for="fname" class="control-label">First Name <small id="fname-errors"
+                                                                                       class="errors"></small></label>
                             <input type="text" class="form-control" name="fname" id="fname">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="lname" class="control-label">Last Name <small id="lname-errors" class="errors"></small></label>
+                            <label for="lname" class="control-label">Last Name <small id="lname-errors"
+                                                                                      class="errors"></small></label>
                             <input type="text" class="form-control" name="lname" id="lname">
                         </div>
                     </div>
@@ -55,13 +58,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="email" class="control-label">Email <small id="email-errors" class="errors"></small></label>
+                            <label for="email" class="control-label">Email <small id="email-errors"
+                                                                                  class="errors"></small></label>
                             <input type="text" class="form-control" name="email" id="email">
                         </div>
                     </div>
                     <div class='col-md-6'>
                         <div class="form-group">
-                            <label for="date" class="control-label">Appointment Time <small id="date-errors" class="errors"></small></label>
+                            <label for="date" class="control-label">Appointment Time <small id="date-errors"
+                                                                                            class="errors"></small></label>
                             <div class='input-group date' id='datetimepicker1'>
                                 <input type='text' class="form-control" id="date">
                                 <span class="input-group-addon">
@@ -75,15 +80,17 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="phone" class="control-label">Phone <small id="phone-errors" class="errors"></small></label>
+                            <label for="phone" class="control-label">Phone <small id="phone-errors"
+                                                                                  class="errors"></small></label>
                             <input type="tel" class="form-control" name="phone" id="phone">
                         </div>
                     </div>
                     <div class='col-md-6'>
                         <div class="form-group">
-                            <label for="service" class="control-label">Choose service <small id="service-errors" class="errors"></small></label>
+                            <label for="service" class="control-label">Choose service <small id="service-errors"
+                                                                                             class="errors"></small></label>
                             <select class="form-control" name="service" id="service">
-                                <option></option>
+                                <option value="">--</option>
                                 <option value="hair">Hair cut €20.00</option>
                                 <option value="beard">Beard trim €25.00</option>
                                 <option value="beard-hair">Beard and hair cut €40.00</option>
@@ -94,8 +101,14 @@
 
                 <div class="row">
                     <div class="col-md-12">
+                        <span id="comments-link">Add comment</span>
+                    </div>
+                </div>
+                <div class="row" id="comments-box" style="display: none;">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <label for="comments" class="control-label">Comments <small id="comments-errors" class="errors"></small></label>
+                            <label for="comments" class="control-label">Comments <small id="comments-errors"
+                                                                                        class="errors"></small></label>
                             <textarea id="comments" class="form-control" name="comments" rows="5"></textarea>
                         </div>
                     </div>
@@ -107,7 +120,6 @@
         </div>
     </div>
 </div>
-</body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
@@ -116,4 +128,5 @@
 
 <script src="js/validate.js"></script>
 <script src="js/booking.js"></script>
+</body>
 </html>
